@@ -8,7 +8,11 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 let connection = false;
 const mongoURI = 'mongodb+srv://yeshwanth3006:LpoQe3wYjZC2sZMc@scoreboard.zyzaaks.mongodb.net/?retryWrites=true&w=majority&appName=ScoreBoard';
-
+import path from 'path';
+app.use(express.static(path.join(__dirname, '../frontend/client/build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/client/build', 'index.html'));
+});
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
