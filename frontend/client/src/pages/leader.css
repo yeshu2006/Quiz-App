@@ -1,0 +1,19 @@
+.leaderboard-title {
+   text-align: center;
+}
+table{
+    border:2px solid black
+}
+th{
+    
+    border-bottom: 2px solid;
+}
+td{
+    text-align: center;
+    border: 2px solid;
+    
+}
+.cont-data{
+    display: grid;
+
+}

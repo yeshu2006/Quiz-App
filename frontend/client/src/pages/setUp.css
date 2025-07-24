@@ -1,0 +1,99 @@
+.setting-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.setting-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+
+
+
+.setting-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.setting-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.setting-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.setting-container label {
+  font-weight: bold;
+  text-align: left;
+  color: #444;
+}
+
+.setting-container select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+.setting-container button[type="submit"] {
+  padding: 0.7rem;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.setting-container button:hover {
+  background-color: #45a049;
+}
+
+.setting-container a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0b7df8;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.setting-container a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .setting-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .setting-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .setting-container select,
+  .setting-container button {
+    font-size: 0.95rem;
+  }
+}
