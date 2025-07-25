@@ -52,7 +52,7 @@ export default function Quiz() {
     }
     setSubmitted(true);
      
-    axios.post('/api/quiz',{
+    axios.post('/quiz',{
       score:score,
       level:level,
       user:user
@@ -77,7 +77,7 @@ export default function Quiz() {
   
   return (
     <div className="quiz-container">
-       <Link to='/api/leaderboard'>LeaderBoard</Link>
+       <Link to='/leaderboard'>LeaderBoard</Link>
       <p dangerouslySetInnerHTML={{ __html: q[index]?.question }} />
       {choices.map((opt, i) => (
         <label key={i}>

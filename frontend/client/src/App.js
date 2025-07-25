@@ -29,7 +29,6 @@ function App() {
   };
   return (
     <>
-
       <div id='main-cont'>
         <div id='header'>
         <h1>Go-Quiz</h1>
