@@ -38,7 +38,7 @@ export default function Setting() {
     console.log("Category ID:", selectedCategory);
     console.log("Difficulty Level:", level);
     console.log("Number of Questions:", numQuestions);
-    nav('/quiz',{
+    nav('https://quiz-app-fbe1.onrender.com/quiz',{
       state:{
         user:user,
         cat:selectedCategory,

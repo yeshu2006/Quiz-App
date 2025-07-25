@@ -18,7 +18,7 @@ function App() {
     });
       try{
         const rest=await
-        axios.post('/user',{
+        axios.post('https://quiz-app-fbe1.onrender.com/user',{
         user:user}
       );
       console.log(rest.data)
