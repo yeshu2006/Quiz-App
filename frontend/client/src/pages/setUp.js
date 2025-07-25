@@ -38,7 +38,7 @@ export default function Setting() {
     console.log("Category ID:", selectedCategory);
     console.log("Difficulty Level:", level);
     console.log("Number of Questions:", numQuestions);
-    nav('https://quiz-app-fbe1.onrender.com/quiz',{
+    nav('/quiz',{
       state:{
         user:user,
         cat:selectedCategory,
@@ -52,7 +52,7 @@ export default function Setting() {
   return (
   <div className="setting-container">
   <h2>Welcome, {user}</h2>
-  <Link to='/api/leaderboard'>LeaderBoard</Link>
+  <Link to='/leaderboard'>LeaderBoard</Link>
   <form onSubmit={handleSubmit}>
     <label htmlFor="cat">Select Category:</label>
     <select name="cat" onChange={handleCategoryChange} value={selectedCategory} required >
