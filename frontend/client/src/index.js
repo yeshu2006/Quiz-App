@@ -14,7 +14,7 @@ root.render(
       <Route path='/' element={<App /> }/>
       <Route path='setUp' element={<Setting /> }/>
       <Route path='quiz' element={<Quiz /> }/>
-      <Route path='/api/leaderboard' element={<Leader />}/>
+      <Route path='/leaderboard' element={<Leader />}/>
     </Routes>
     </BrowserRouter>
 );
