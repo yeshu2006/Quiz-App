@@ -5,7 +5,7 @@ import './leader.css';
 export default function Leader() {
   const [user, setUser] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3050/api/leaderboard')
+    axios.get('https://quiz-app-fbe1.onrender.com/leaderboard')
       .then((response) => {
         setUser(response.data.user);
       })
