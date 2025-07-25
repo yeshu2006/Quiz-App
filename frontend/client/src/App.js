@@ -32,7 +32,7 @@ function App() {
       <div id='main-cont'>
         <div id='header'>
         <h1>Go-Quiz</h1>
-        <Link to='/api/leaderboard' id='link'>LeaderBoard</Link>
+        <Link to='/leaderboard' id='link'>LeaderBoard</Link>
         </div>
         <div id='container'>
           <h3>Welcome to QuizGo!</h3>
