@@ -17,13 +17,11 @@ mongoose.connect(mongoURI, {
 .catch((error) => {
   console.error("❌ MongoDB Connection Failed", error);
 });
-
-app.post('/', (req, res) => {
+app.post('/user', (req, res) => {
   const user = req.body;
   console.log(user);
   res.status(200).json({ msg: "User received" });
 });
-
 app.post('/quiz', async (req, res) => {
   try {
     const { score, user, level } = req.body;
@@ -39,6 +37,7 @@ app.get('/leaderboard', async (req, res) => {
   try {
     const users = await User.find({});
     return res.json({ mess: "Success", user: users });
+    
   } catch (err) {
     console.error(err);
     return res.status(500).json({ mess: "Server error" });

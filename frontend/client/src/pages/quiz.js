@@ -52,7 +52,7 @@ export default function Quiz() {
     }
     setSubmitted(true);
      
-    axios.post('/quiz',{
+    axios.post('https://quiz-app-fbe1.onrender.com/quiz',{
       score:score,
       level:level,
       user:user
@@ -68,7 +68,7 @@ export default function Quiz() {
    
   return (
   <div className="quiz-container">
-    <Link to='https://quiz-app-fbe1.onrender.com/leaderboard'>LeaderBoard</Link>
+    <Link to='/leaderboard'>LeaderBoard</Link>
     <h2>Quiz Completed!</h2>
     <p className="score">Your Score: {score} / {ques}</p>
   </div>
